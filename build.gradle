@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'org.hvalls.vertx.asyncapi'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.vertx:vertx-core:3.9.0'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.0'
+    implementation 'org.everit.json:org.everit.json.schema:1.5.1'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+}

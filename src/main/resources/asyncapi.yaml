@@ -1,0 +1,23 @@
+asyncapi: 2.0.0
+info:
+  title: Catalog Service
+  version: '1.0.0'
+
+channels:
+  book/registered:
+    description: Book Registered Topic
+    publish:
+      message:
+        name: BookRegistered
+        contentType: application/json
+        payload:
+          type: object
+          properties:
+            bookId:
+              type: string
+            title:
+              type: string
+            author:
+              type: string
+          additionalProperties: false
+          required: ["bookId", "title", "author"]
