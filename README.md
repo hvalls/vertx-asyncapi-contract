@@ -76,3 +76,5 @@ public class Main {
 ```
 
 Code above fails since the message doesn't contain `author` field and, according AsyncAPI doc, it is required. 
+
+Only `MessageProducer<JsonObject>` is supported so far.
